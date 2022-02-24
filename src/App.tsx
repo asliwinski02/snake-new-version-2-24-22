@@ -6,6 +6,23 @@ import { useEffect } from "react";
 
 export default function App() {
   // Add Snake Tests with display below
+  display(
+    "snake is moving",
+    firstSnake.position,
+    "squares,",
+    "and snake is turning",
+    firstSnake.direction,
+    "squares"
+  );
+  display(
+    "snake is moving",
+    secondSnake.position,
+    "squares,",
+    "and snake is turning",
+    secondSnake.direction,
+    "squares"
+  );
+  
   useEffect(() => {
     // Include your display statements to test below
     document.getElementById("output")!.innerText = "OUTPUT:\n";
@@ -21,19 +38,4 @@ export default function App() {
     </div>
   );
 }
-display(
-  "snake is moving",
-  firstSnake.position,
-  "squares,",
-  "and snake is turning",
-  firstSnake.direction,
-  "squares"
-);
-display(
-  "snake is moving",
-  secondSnake.position,
-  "squares,",
-  "and snake is turning",
-  secondSnake.direction,
-  "squares"
-);
+
